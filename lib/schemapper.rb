@@ -23,4 +23,4 @@ attrs = models.map do |model|
   { table: model.table_name, attrs: model.attribute_names }
 end
 
-puts YAML.dump({ nodes: nodes, links: links, attributes: attrs.uniq })
+puts YAML.dump({ :nodes => nodes, :links => links, :attributes => attrs.uniq })
